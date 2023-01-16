@@ -3,7 +3,6 @@
  */
 
 rootProject.name = 'qupath-scripts'
-include('scripts')
 
 // Define the QuPath version to use
 gradle.ext.qupathVersion = "0.4.1"
