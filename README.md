@@ -15,8 +15,9 @@ Which is where this repo comes in.
 
 ## How do I use it?
 
-The IDE I've used more for writing QuPath scripts is [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/).
-Therefore the instructions focus on that - but potentially the approach could be used for other IDEs.
+One IDE that is often used for writing QuPath scripts is [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/).
+
+The instructions focus on that - but potentially the same approach could be used for other IDEs.
 
 ### Scripting with IntelliJ
 
@@ -34,7 +35,7 @@ Whenever you want to run the script in QuPath, drag it onto QuPath's main window
 > 
 > If *File &rarr; Auto refresh files* is selected in QuPath's script editor, then saving the script in IntelliJ should result in it automatically being reloaded when you switch to QuPath.
 > 
-> (Full disclosure: a bug in QuPath v0.4.0 and v0.4.1 broke the auto-refresh feature - but it will be fixed in v0.4.2.)
+> (Full disclosure: a bug in QuPath v0.4.0 and v0.4.1 broke the auto-refresh feature - but it was fixed in v0.4.2.)
 
 
 ### Set a script directory in QuPath
@@ -60,3 +61,5 @@ Use it as you wish (without warranty, of course).
 
 If it had a license, it would be the [Unlicense](https://unlicense.org).
 I didn't include the unlicense file though, since if anyone forks the repo then they might forget to remove it - and inadvertently unlicense their own scripts.
+
+Note that the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) has its own license.
