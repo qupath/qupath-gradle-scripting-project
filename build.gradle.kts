@@ -3,9 +3,24 @@ plugins {
     `groovy`
     // To manage included native libraries, limiting to the current platform
     alias(libs.plugins.javacpp)
+    // For JavaFX support
+    id("org.openjfx.javafxplugin") version "0.1.0"
 }
 
 val qupathVersion: String by gradle.extra
+
+javafx {
+    version = libs.versions.javafx.get()
+    modules = listOf(
+        "javafx.base",
+        "javafx.controls",
+        "javafx.graphics",
+        "javafx.media",
+        "javafx.fxml",
+        "javafx.web",
+        "javafx.swing"
+    )
+}
 
 dependencies {
     // Get QuPath GUI & core (version declared in settings.gradle.kts)

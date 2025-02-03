@@ -4,4 +4,5 @@
 
 import qupath.fx.dialogs.Dialogs
 
+
 Dialogs.showMessageDialog("Greetings", "Hello from my script!")
